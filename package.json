@@ -1,7 +1,7 @@
 {
-  "name": "express-prototype",
-  "description": "GOVUK prototyping app in Express",
-  "version": "6.0.0",
+  "name": "defra-sdlc-prototype",
+  "description": "Defra service delivery lifecycle prototype",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": ">=6.0 <7.0"

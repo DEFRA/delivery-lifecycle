@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+  Defra Delivery Lifecycle Prototype
 {% endblock %}
 
 {% block content %}
@@ -11,54 +11,73 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
+        The Defra Service Delivery Lifecycle (Prototype)
         <span class="heading-secondary">{{releaseVersion}}</span>
       </h1>{{releaseVersion | log }}
       <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        This delivery lifecycle shows how services are delivered in Defra.
       </p>
 
       <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+        It is a guide for anyone delivering services on behalf of Defra, whether inside or outside of the department.
       </p>
 
-      <h2 class="heading-medium">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-			<h2 class="heading-medium">Examples and documentation</h2>
+      <p>It exists to ensure effective delivery of services through:</p>
 
 			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
-
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
+				<li>A shared understanding of the expected ways of working, so that everyone involved with service delivery is able to get their job done.</li>
+				<li>A common vocabulary to be used so as to avoid errors and omissions through misunderstandings and miscommunications.</li>
 			</ul>
 
     </div>
+
+    <div class="column-third">
+      <div class="phase-banner-alpha">
+        <p>
+          <strong class="phase-tag">ALPHA</strong>
+          <span>This guide is currently just a prototype to be used to get feedback.</span>
+        </p>
+      </div>
+    </div>
+
   </div>
+
+  <div class="grid-row">
+    <div class="column-third">
+      <h2 class="heading-medium"><a href="definitions">Definitions</a></h2>
+      <p>Definitions of common terms to aid communication.</p>
+    </div>
+    <div class="column-third">
+      <h2 class="heading-medium"><a href="principles">Principles</a></h2>
+      <p>Principles that underpin the design of the delivery lifecycle.</p>
+    </div>
+    <div class="column-third">
+      <h2 class="heading-medium"><a href="teams">Teams</a></h2>
+      <p>Information about the various teams of people that are involved in service delivery.</p>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-third">
+      <h2 class="heading-medium"><a href="overviews">Overviews</a></h2>
+      <p>Different views of the lifecycle, suitable for different teams.</p>
+    </div>
+    <div class="column-third">
+      <h2 class="heading-medium"><a href="details">Details</a></h2>
+      <p>For people looking for a specific piece of information, just jump straight into the details!</p>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Other resources</h2>
+
+			<ul class="list list-bullet">
+				<li><a href="https://www.gov.uk/service-manual">Service design manual</a></li>
+			</ul>
+    </div>
+  </div>
+
 </main>
 
 {% endblock %}
-
-
