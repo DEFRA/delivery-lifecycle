@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra Service Delivery Lifecycle</a></li>
+      <li>Overviews</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Defra Service Delivery Lifecycle Overviews</h1>
+      <p>
+        All Services will be delivered in a series of phases as defined by the Service Manual:
+        Discovery, Alpha, Beta and Live.
+      </p>
+      <p>
+        This section provides an overview of how these phases apply to different types of delivery.
+      </p>
+      <p>
+        The lifecycle is described in terms of the interactions between teams.  The overviews below are provided
+        for each of the three different types of team involved in delivery: vertical, horizontal and functional.
+      </p>
+
+    </div>
+
+  </div>
+
+  <h2 class="heading-medium"><a href="overview/vertical">Vertical Teams Overview</a></h2>
+  <div class="grid-row">
+    <div class="column-third">
+      <img src="/public/images/sdlc/overview_vertical.png">
+    </div>
+    <div class="column-two-thirds">
+      <p>
+        The vertical teams overview identifies the interactions with multiple horizontal and functional teams.
+      </p>
+      <p>It focuses on:</p>
+      <ul class="list list-bullet">
+				<li>
+          Interactions with teams that are delivering cross-cutting services who may be at different phases in
+          their own delivery lifecycle.
+        </li>
+				<li>
+          Interactions with functional teams providing operational support throughout the lifecycle.
+        </li>
+        <li>
+          Governance and assurance that take place during the delivery phases.
+        </li>
+			</ul>
+    </div>
+  </div>
+
+  <h2 class="heading-medium"><a href="overview/horizontal">Horizontal Teams Overview</a></h2>
+  <div class="grid-row">
+    <div class="column-third">
+      <img src="/public/images/sdlc/overview_horizontal.png">
+    </div>
+    <div class="column-two-thirds">
+      <p>
+        The horizontal teams overview identifies the interactions with multiple vertical and functional teams.
+      </p>
+      <p>It focuses on:</p>
+      <ul class="list list-bullet">
+				<li>
+          Interactions with teams that are delivering line of business services who may be at different phases in
+          their own delivery lifecycle.
+        </li>
+        <li>
+          Interactions with other cross-cutting service teams who may be at different phases in their own delivery
+          lifecycle.
+        </li>
+				<li>
+          Interactions with functional teams providing operational support, in particular the continuous improvement
+          activities of a live service.
+        </li>
+        <li>
+          How governance is applied across the line of business services that the horizontal service will support.
+        </li>
+			</ul>
+    </div>
+  </div>
+
+  <h2 class="heading-medium"><a href="overview/functional">Functional Teams Overviews</a></h2>
+  <div class="grid-row">
+    <div class="column-third">
+      <img src="/public/images/sdlc/overview_functional.png">
+    </div>
+    <div class="column-two-thirds">
+      <p>
+        The overviews for functional teams provide a summary of the interactions with multiple horizontal and vertical
+        teams.
+      </p>
+      <p>They focus on:</p>
+      <ul class="list list-bullet">
+				<li>
+          Governance and assurance that take place during the delivery phases.
+        </li>
+        <li>
+          Early contact points with service teams.
+        </li>
+				<li>
+          Identification of resource demand from operational teams.
+        </li>
+			</ul>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra Service Delivery Lifecycle</a></li>
+      <li><a href="/overviews">Overviews</a></li>
+      <li>Vertical Service Teams Overview</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Defra Service Delivery Lifecycle Overview for Vertical Service Teams</h1>
+      <p>
+        All Services will be delivered in a series of phases as defined by the Service Manual:
+        Discovery, Alpha, Beta and Live.
+      </p>
+      <p>
+        The diagram below identifies the interactions that the team will need to have during the various phases.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- <img src="/public/images/sdlc/overview_vertical.svg" width="100%"> -->
+  <object width="100%" data="/public/images/sdlc/overview_vertical.svg" type="image/svg+xml">
+
+</main>
+
+{% endblock %}
