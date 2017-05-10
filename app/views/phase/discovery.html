@@ -1,0 +1,861 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra Service Delivery Lifecycle</a></li>
+      <li><a href="/phases">Phases</a></li>
+      <li>Discovery</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge" id="toc_0">A guide to discovery</h1>
+
+      <p>Originally written by <a href="https://twitter.com/sarahprag">Sarah Prag</a>, for Defra Digital.</p>
+
+      <h2 class="heading-large" id="toc_1">What this document is for</h2>
+
+      <p>This document is designed to help teams within the Defra group to run successful discoveries. It expands upon, and adds more detail to, the <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works">high-level discovery guidance</a> provided in the <a href="https://www.gov.uk/service-manual">GDS Service Manual</a>.</p>
+
+      <p>It has been produced by the <a href="https://defradigital.blog.gov.uk/2017/04/13/introducing-the-enabling-digital-transformation-team/">Enabling Digital Transformation team</a>(EDT), part of the Digital Transformation Programme.</p>
+
+      <p>This is version 1. It&rsquo;s still a work in progress and we would welcome your comments. There may be things here that are contentious - that&rsquo;s ok. Please contact us, we&rsquo;re happy to work with you to make it better.</p>
+
+      <p>If you would like to provide feedback, contact the <a href="http://bit.ly/edtyammer">EDT team on Yammer</a>. </p></p>
+
+      <h2 class="heading-large" id="toc_2">Contents</h2>
+
+      <ul class="toc list">
+      <li>
+      <a href="#toc_0">A guide to discovery</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_1">What this document is for</a>
+      </li>
+      <li>
+      <a href="#toc_2">Contents</a>
+      </li>
+      <li>
+      <a href="#toc_3">Section 1: Understanding discovery</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_4">What discovery means</a>
+      </li>
+      <li>
+      <a href="#toc_5">When is discovery the right thing to do?</a>
+      </li>
+      <li>
+      <a href="#toc_6"> How discovery is different from a Policy &amp; Delivery Challenge</a>
+      </li>
+      <li>
+      <a href="#toc_7">The benefits of doing discovery</a>
+      </li>
+      <li>
+      <a href="#toc_8">The risks of not doing discovery</a>
+      </li>
+      <li>
+      <a href="#toc_9">How long will discovery take?</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_10">Section 2: How to prepare for discovery</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_11">Preparation work</a>
+      </li>
+      <li>
+      <a href="#toc_12">Specific preparation tasks</a>
+      </li>
+      <li>
+      <a href="#toc_13">Who will be needed in discovery?</a>
+      </li>
+      <li>
+      <a href="#toc_14">What will people be doing?</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_15">Service owner / manager</a>
+      </li>
+      <li>
+      <a href="#toc_16">Product owner / manager</a>
+      </li>
+      <li>
+      <a href="#toc_17">Delivery manager</a>
+      </li>
+      <li>
+      <a href="#toc_18">Business analyst</a>
+      </li>
+      <li>
+      <a href="#toc_19">User researcher</a>
+      </li>
+      <li>
+      <a href="#toc_20">Designer</a>
+      </li>
+      <li>
+      <a href="#toc_21">Technical lead</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_22">Setting up for success</a>
+      </li>
+      <li>
+      <a href="#toc_23">Knowing when to start</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_24">Section 3: How to actually do discovery</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_25">There’s no set way to do discovery</a>
+      </li>
+      <li>
+      <a href="#toc_26">A suggested approach</a>
+      </li>
+      <li>
+      <a href="#toc_27">The learning phase</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_28">Kick off workshop</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_29">An intro icebreaker</a>
+      </li>
+      <li>
+      <a href="#toc_30">An intro from the service owner</a>
+      </li>
+      <li>
+      <a href="#toc_31">An intro to the discovery itself</a>
+      </li>
+      <li>
+      <a href="#toc_32">A “What do we know?” exercise:</a>
+      </li>
+      <li>
+      <a href="#toc_33">A prioritisation exercise:</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_34">Gathering &amp; mapping insight</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_35">Users &amp; their needs</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_36">What will be produced?</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_37">Business drivers &amp; constraints</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_38">What will be produced?</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_39">Current internal processes &amp; workflow</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_40">What will be produced?</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_41">Existing technology</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_42">What will be produced?</a>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_43">Sharing, validation &amp; prioritisation</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_44">The sketching and testing phase</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_45">Technical capability vs candidate technology</a>
+      </li>
+      <li>
+      <a href="#toc_46">Starting with ideals</a>
+      </li>
+      <li>
+      <a href="#toc_47">Reality check</a>
+      </li>
+      <li>
+      <a href="#toc_48">Testing</a>
+      </li>
+      <li>
+      <a href="#toc_49">Prioritisation</a>
+      </li>
+      <li>
+      <a href="#toc_50">Choosing an alpha</a>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_51">The refining &amp; planning phase</a>
+      <ul class="list list-bullet">
+      <li>
+      <a href="#toc_52">Working towards an alpha</a>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li>
+      <a href="#toc_53">Section 4: further reading</a>
+      </li>
+      </ul>
+      </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <h2 class="heading-large" id="toc_3">Section 1: Understanding discovery</h2>
+
+  <h3 class="heading-medium" id="toc_4">What discovery means</h3>
+
+  <p>Discovery is a phase of work that helps a team to understand and articulate a set of needs, and then propose a way of meeting them.</p>
+
+  <p>It allows the team to ask questions like <q>Who is this for? Why? What do they want to achieve?</q> &hellip; before they start to identify potential solutions. </p>
+
+  <p>It&rsquo;s a useful process to go through before diving into any kind of delivery. It reduces the risk that you&rsquo;ll try to deliver the wrong thing, and increases the likelihood that what you do deliver will work for its users, and bring about the outcomes you intended.</p>
+
+  <h3 class="heading-medium" id="toc_5">When is discovery the right thing to do?</h3>
+
+  <p>In the context of Defra, discovery is useful when thinking about:</p>
+
+  <ul class="list list-bullet">
+  <li>needs that might result in a new or improved citizen-facing service</li>
+  <li>needs that might result in a new or improved internal service or platform </li>
+  <li>needs that might result in non-technical solutions (e.g. when exploring how you might do recruitment differently)</li>
+  </ul>
+
+  <p>Discovery is just as valuable if you are likely to commission or buy a service as it is if you expect to build a solution internally. </p>
+
+  <p>This document is particularly aimed at teams working on the first area - needs that might result in a new or improved citizen-facing service. It provides detailed guidance that can be followed by those teams. However the principles and techniques can also be applied in the other situations.</p>
+
+  <h3 class="heading-medium" id="toc_6"> How discovery is different from a Policy &amp; Delivery Challenge</h3>
+
+  <p>Within Defra we&rsquo;ve also developed a process called Policy &amp; Delivery Challenge (PDC) to explore whole systems or policy areas and ask whether there are things that could be done differently (or even not done at all). </p>
+
+  <p>PDCs share much of the spirit of discovery, and use some similar techniques - but they are asking even bigger questions about the purpose of, and approach to a whole area of government. </p>
+
+  <p>This scale of exploration happens before focusing in on specific service areas. A PDC might recommend one or more specific services to take into discovery. </p>
+
+  <h3 class="heading-medium" id="toc_7">The benefits of doing discovery</h3>
+
+  <p>Done well, a discovery process allows a team (and the organisation they sit in) to:</p>
+
+  <ul class="list list-bullet">
+  <li>really understand the problems to be solved and the needs to be met (this includes understanding policy intent)</li>
+  <li>identify opportunities to meet those needs, potentially in new and transformative ways</li>
+  <li>if appropriate, propose an approach to incrementally deliver and test these opportunities (starting with an <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works">alpha</a> if it’s a citizen-facing government digital service)</li>
+  </ul>
+
+  <p>By involving a mix of subject matter experts and technical specialists, the discovery process helps to ensure that any solutions proposed are feasible and grounded in reality. </p>
+
+  <p>It also enables the people who might go on to build or run the service to be involved with shaping it, and should produce a roadmap that they are happy to support and deliver. </p>
+
+  <p>Teams who intend to meet the government <a href="https://www.gov.uk/service-manual/service-standard">Digital Service Standard</a> need to start with discovery. Although there is no formal <a href="https://www.gov.uk/service-manual/service-assessments">Service Assessment</a> at the end of the discovery phase, there is an expectation that services will have started with one, and this lays the foundation for many things that will be assessed, for example <a href="https://www.gov.uk/service-manual/service-standard/understand-user-needs">understanding user needs</a>.</p>
+
+  <p>The Government Digital Service provides an overview of <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works#what-to-find-out-in-discovery">9 key things</a> you’ll know by the end of discovery. These are:</p>
+
+  <ul class="list list-bullet">
+  <li>who your users are</li>
+  <li>your users’ needs and how you’re meeting them, or any needs you’re not meeting</li>
+  <li>which services currently meet your users’ needs and whether they’re government services or private sector</li>
+  <li>the policy that relates to your service and how it might prevent you from delivering a good service to your users (to put it another way: how policy might need to adapt to make the service better)</li>
+  <li>what the user journey might look like</li>
+  <li>how you’d start developing a new service if your discovery finds there’s a user need for one (or, how you’ll improve or iterate an existing service to better meet user needs)</li>
+  <li>how you might build a technical solution given the constraints of your organisation’s legacy systems</li>
+  <li>the people you need on your team for the alpha phase</li>
+  <li>what to name your proposed service</li>
+  </ul>
+
+  <p>If your service work is funded by the Defra Digital Transformation Programme, it should also always start with a discovery.</p>
+
+  <h3 class="heading-medium" id="toc_8">The risks of not doing discovery</h3>
+
+  <p>In common with many of the other techniques in the government <a href="https://www.gov.uk/service-manual">Service Manual</a>, the discovery phase is a response to the cost and failures of previous approaches. </p>
+
+  <p>In simple terms, a common approach used to be to commission a solution up front, based on managerial assumptions or on what the market was selling. A delivery team (internal or external) would then work to deliver what had been specified, with very little opportunity to challenge or test the assumptions that had been made. </p>
+
+  <p>At worst, this could result in solutions that were actually impossible to deliver. In many cases it would result in services that weren’t intuitive to use by the intended users, and which failed to deliver the expected (assumed) outcomes. </p>
+
+  <p>Discovery is an opportunity to test those assumptions, and to really understand the people you expect to interact with. This increases the likelihood that any solutions you go on to deliver will actually meet user needs and successfully deliver realistic outcomes.  </p>
+
+  <p>Discovery also decreases the risk that you’ll invest in a solution that’s not even needed.  Sometimes, a discovery ends with the conclusion that no new services need to be delivered, or that the needs can be best met elsewhere. And that’s ok.</p>
+
+  <h3 class="heading-medium" id="toc_9">How long will discovery take?</h3>
+
+  <p>There are no rules that say exactly how long it will take. The key things that affect it will be:</p>
+
+  <ul class="list list-bullet">
+  <li>the scale and complexity of the problem/service that is being looked at</li>
+  <li>the availability/time commitment of the team </li>
+  <li>the availability of the Service Owner and SMEs for key workshops/discussions</li>
+  <li>how much prep has been done, and how thorough it is</li>
+  <li>the quality of any existing user research, and/or whether the user researcher can get instant access to users </li>
+  </ul>
+
+  <p>Guidance from the Government Digital Service currently says:</p>
+
+  <blockquote>
+  <p>“Every service is different, but depending on the size and complexity of your service, your discovery should usually take between 4 and 8 weeks.”</p>
+  </blockquote>
+
+  <p>In reality, though, if you are looking at a transactional citizen-facing service, or an area of need that might result in one:</p>
+
+  <ul class="list list-bullet">
+  <li>4 weeks is very ambitious, even if all of these factors are in place</li>
+  <li>6 weeks is a more realistic minimum, if you have a limited set of users and their needs are already fairly well known </li>
+  <li>8 weeks is probably most realistic to understand the needs of multiple user groups and the issues/opportunities around an existing/legacy service</li>
+  </ul>
+
+  <h2 class="heading-large" id="toc_10">Section 2: How to prepare for discovery</h2>
+
+  <h3 class="heading-medium" id="toc_11">Preparation work</h3>
+
+  <p>Doing the right preparation up front will improve the success and efficiency of your discovery. It will also help you to secure the necessary funding. </p>
+
+  <p>The main focus is: </p>
+
+  <ul class="list list-bullet">
+  <li>to gather material to be used and referred to in discovery</li>
+  <li>to make the case for discovery to be funded (including the people and skills needed)</li>
+  </ul>
+
+  <p>Even at the prep stage, there should be an empowered service owner (also known as the <a href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team#service-manager">Service Manager</a>) to lead and champion the work. It’s their name that should go on any proposals or funding bids.  </p>
+
+  <p>They are likely to need support from one or more Business Analysts from their business area to help gather material and complete any required business case or funding request.  </p>
+
+  <p>There are no digital/IT specialists involved at this stage. </p>
+
+  <h3 class="heading-medium" id="toc_12">Specific preparation tasks</h3>
+
+  <p>These are the common activities in the run up to Discovery:</p>
+
+  <table>
+  <thead>
+  <tr>
+  <th><strong>Prep activity</strong></th>
+  <th><strong>Things to bear in mind</strong></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+  <td>Identifying the main business drivers</td>
+  <td><em>Why this service/policy area? Why now? What do we hope to achieve? How might this also contribute to wider programme or cross-Defra goals?</em></td>
+  </tr>
+  <tr>
+  <td>Gathering existing insight about the users of any current service and their probable pain points and needs</td>
+  <td><em>E.g. from customer service logs, performance data for existing online services, any recent surveys etc. You don’t need to be doing new research at this stage, just gathering what already exists.</em></td>
+  </tr>
+  <tr>
+  <td>Gathering existing insight about how any current service(s) in this area are delivered</td>
+  <td><em>Current policy, processes, technology maps, costs etc This could be expressed in As Is maps, but they don’t need to be polished at this stage.</em></td>
+  </tr>
+  <tr>
+  <td>Identifying subject matter experts who might get involved with Discovery</td>
+  <td><em>Put placeholder dates in their diaries and the Service Owner’s for kick off &amp; other likely events</em></td>
+  </tr>
+  <tr>
+  <td>Making the case for Discovery and getting any necessary approvals</td>
+  <td><em>Don’t promise solutions at this stage! It’s about quantifying the problem/costs/issues that you want to look at. This will also need to include an understanding of the people and skills you are likely to need for discovery.</em></td>
+  </tr>
+  </tbody>
+  </table>
+
+  <p>If you plan to apply to the Digital Transformation Board for funding later, they will expect to see evidence of this work in your bid.</p>
+
+  <h3 class="heading-medium" id="toc_13">Who will be needed in discovery?</h3>
+
+  <p>Before you can start discovery, you need to make sure the right people and skills are available. Asking for these people is likely to be a key part of your business case or funding request. </p>
+
+  <p>The exact makeup of the team will depend partly on:</p>
+
+  <ul class="list list-bullet">
+  <li>the scale of the service area you are looking at</li>
+  <li>the technologies involved (currently, and potentially in the future)</li>
+  <li>whether there is recent/current work being done on similar services, where expertise can be shared</li>
+  </ul>
+
+  <p>However, in every case you will certainly need:</p>
+
+  <ul class="list list-bullet">
+  <li>a senior accountable decision maker (the service owner)</li>
+  <li>someone to steer and shape the activities and outputs </li>
+  <li>someone to keep things moving and on track</li>
+  <li>user research expertise</li>
+  <li>service design expertise </li>
+  <li>technical expertise appropriate to your service (someone who can understand the current set up, and also someone who understands the wider tech strategy and future direction)</li>
+  <li>subject matter expertise (e.g. people who understand the policies and the current processes)</li>
+  </ul>
+
+  <p>All of these skills will be needed - what may vary from service to service is who provides this expertise and whether they are full time, or working across more than one service.</p>
+
+  <p>If people are working across services (e.g. potentially a service designer or architect might) then the team will need to coordinate with the other teams to make this workable. E.g. they will need to make sure that their daily stand-ups and planning meetings don’t clash. </p>
+
+  <p>As a benchmark, a team working on a new service area with a dependency on technology would usually consist of:</p>
+
+  <ul class="list list-bullet">
+  <li>Service owner / <a href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team#service-manager">Service manager</a></li>
+  <li>Product owner / <a href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team#product-manager">Product manager</a> (if the service owner isn’t available full time day to day)</li>
+  <li>Delivery manager (if the Product Owner hasn’t done a discovery before)</li>
+  <li>Business analyst</li>
+  <li><a href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team#user-researcher">User researcher(s)</a></li>
+  <li><a href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team#designer">Designer</a> (with experience/interest in service design)</li>
+  <li>Technical lead(s) </li>
+  <li>Subject matter experts </li>
+  </ul>
+
+  <p>You are unlikely to need either content designers or developers at this stage. </p>
+
+  <h3 class="heading-medium" id="toc_14">What will people be doing?</h3>
+
+  <p>We’ll go into more detail in Section 3 below, but broadly speaking, during discovery, the purpose of each of the roles in the team is:</p>
+
+  <h4 class="heading-small" id="toc_15">Service owner / manager</h4>
+
+  <p>The service owner or service manager is the senior accountable person who is responsible for the service. They set the direction and make overall decisions about priorities. This role is essential and mandatory for any service working to the Service Standard. They need to be highly engaged and accessible to the team, and be available to attend all main events including regular informal gatherings like show &amp; tells. </p>
+
+  <h4 class="heading-small" id="toc_16">Product owner / manager</h4>
+
+  <p>Unless the service owner is extremely hands-on they are likely to need a product owner to lead the team on a day-to-day basis, translating the business drivers and user needs into actionable tasks and plans, steering the process, setting priorities and shaping the outputs. Ideally this role would be filled by someone with professional product management experience. If the product owner does have previous experience of working through a discovery, then they could also be the person who leads the discovery process, keeping things moving and on track. In other words, if you have an experienced product owner, you may not also need a delivery manager for discovery. </p>
+
+  <h4 class="heading-small" id="toc_17">Delivery manager</h4>
+
+  <p>If the product owner doesn’t have previous experience of leading a team through discovery, they are likely to need a delivery manager to keep things on track, making sure they team has what it needs, unblocking issues, managing dependencies and logistics.</p>
+
+  <h4 class="heading-small" id="toc_18">Business analyst</h4>
+
+  <p>The business analyst is likely to lead or support a number of different areas including understanding and capturing process related insight and opportunities, stakeholder management and comms, supporting the production of the business case. They will work very closely with the product owner. </p>
+
+  <h4 class="heading-small" id="toc_19">User researcher</h4>
+
+  <p>Leads the analysis of existing user insight, and conducts new user research. They are the main champion of user need - but the whole team has to understand and be led by these needs. </p>
+
+  <h4 class="heading-small" id="toc_20">Designer</h4>
+
+  <p>At the discovery stage the main focus is on service design - including the production of a service map, with reference to any existing patterns. This is best done by a designer with a strong interest in service design. They may well have worked on, or be working on, other services in the same programme or service area. There is also a need for some high level work on potential future user journeys and user experience.</p>
+
+  <h4 class="heading-small" id="toc_21">Technical lead</h4>
+
+  <p>The technical work in discovery falls into two areas - understanding any current (legacy) technology already in use, and proposing future technical capabilities that could meet the user needs. Both will typically be done by a technical or solutions architect, but the team will also need access to an enterprise architect to ensure they’ve understood the overall and future technology context. </p>
+
+  <h3 class="heading-medium" id="toc_22">Setting up for success</h3>
+
+  <p>In order to succeed, a discovery team ideally needs:</p>
+
+  <ul class="list list-bullet">
+  <li>to be able to sit together, in a dedicated space</li>
+  <li>lots of wall space for thinking-out-loud</li>
+  <li>access to collaboration tools e.g. shared documents, a backlog tool like Trello or Jira</li>
+  <li>regular contact with the service owner</li>
+  <li>daily contact with the product owner</li>
+  <li>contact with users (internal &amp; external)</li>
+  <li>the freedom to ask questions and challenge assumptions</li>
+  </ul>
+
+  <h3 class="heading-medium" id="toc_23">Knowing when to start</h3>
+
+  <p>You’re ready to kick off discovery when you have:</p>
+
+  <ul class="list list-bullet">
+  <li>assembled the team</li>
+  <li>a clear purpose and set of business drivers </li>
+  <li>access to existing data &amp; insight about any current service and users</li>
+  <li>any necessary approvals &amp; budget </li>
+  </ul>
+
+  <p>If any of these are missing or half-done, don’t start discovery. Get the preparation done properly first. </p>
+
+
+  <h2 class="heading-large" id="toc_24">Section 3: How to actually do discovery</h2>
+
+  <h3 class="heading-medium" id="toc_25">There’s no set way to do discovery</h3>
+
+  <p>There isn’t a one-size-fits all approach to doing discovery, but there are certain principles and activities that are likely to benefit most teams.  </p>
+
+  <p>This guide lays out one approach, developed by Defra, based on <a href="https://makeitquotidian.co.uk">Sarah Prag</a>’s approach, with additional input from elsewhere.  </p>
+
+  <p>Over time this should be iterated, and illustrated with examples from real Defra teams. </p>
+
+  <p>There is also an emerging cross-government <a href="https://ukgovernmentdigital.slack.com/messages/discovery">Community of Interest</a> who intend to develop and share best practice for doing discovery. There are also some useful blog posts at the end of this document.</p>
+
+  <h3 class="heading-medium" id="toc_26">A suggested approach</h3>
+
+  <p>The following framework can help teams to get to grips with discovery. </p>
+
+  <p>It breaks things down into 3 phases:</p>
+
+  <ol class="list list-number">
+  <li>Learning</li>
+  <li>Sketching &amp; testing</li>
+  <li>Refining &amp; planning</li>
+  </ol>
+
+  <p>Discovery is a process. Teams move together, through understanding the problem, to identifying opportunities, to proposing a delivery approach. They open up their thinking before focusing in on an approach. For this reason discovery is sometimes pictured as a diamond shape. </p>
+
+  <p><img src="/public/images/sdlc/discovery_diamond.jpeg"></p>
+
+  <p>What’s really important is the quality of the inputs to this process, and the quality of the conversations that the team have. </p>
+
+  <p>There are activities that will help this to happen - but just going through the motions and ticking off a checklist won’t deliver the transformative results. <strong>It’s about attitude, not just activities.</strong></p>
+
+  <p>The approach laid out here assumes that the team are being asked to look at an existing service and identify ways to improve or transform it. This is a common scenario in government at the moment. Discovery helps the team to get back to first principles in terms of understanding users and their needs. However in parallel, the team are also looking at the current/legacy services and the opportunities (and constraints) this presents. </p>
+
+  <p>The important thing is to be lead by the user needs, not by the existing set-up. </p>
+
+  <p>Now let’s look at each of the three phases in turn.</p>
+
+  <h3 class="heading-medium" id="toc_27">The learning phase</h3>
+
+  <p>This phase is about <strong>understanding the world as it is</strong>. The team’s focus is on research and analysis. </p>
+
+  <p>During the learning phase, the discovery team should aim to find out as much as possible about: </p>
+
+  <ul class="list list-bullet">
+  <li>users &amp; their needs (including other services they might already interact with)</li>
+  <li>business drivers &amp; constraints</li>
+  <li>current internal processes &amp; workflow (assuming there is already a service)</li>
+  <li>existing technology (again, assuming there is already a service)</li>
+  </ul>
+
+  <p>In this period of information gathering, it’s important to try and avoid getting into discussions about how things could be done differently. The focus needs to be on asking questions about user needs, and about how things are now, and capturing the answers. This will provide the foundations for the next phase. </p>
+
+  <p>Here are some useful activities you can run during the learning phase:</p>
+
+  <h4 class="heading-small" id="toc_28">Kick off workshop</h4>
+
+  <p>This is an opportunity to:</p>
+
+  <ul class="list list-bullet">
+  <li>Introduce the team to each other, including subject matter experts</li>
+  <li>Introduce everyone to the service, its vision, policy background, and drivers </li>
+  <li>Share what’s already known about the service (including what’s been gathered in prep)</li>
+  <li>Identify gaps in knowledge to be explored</li>
+  <li>Prioritise those gaps and create an initial backlog of work </li>
+  <li>Introduce ways of working (the backlog, the wall, standups etc)</li>
+  </ul>
+
+  <p>Useful things to do in the workshop:</p>
+
+  <h5 id="toc_29">An intro icebreaker</h5>
+
+  <ul class="list list-bullet">
+  <li>There are various games etc that can be used at the start of a workshop</li>
+  <li>Whichever you use, encourage people to talk about what skills &amp; knowledge they are bringing to the process, rather than their job title or where they sit in the organisation</li>
+  </ul>
+
+  <h5 id="toc_30">An intro from the service owner</h5>
+
+  <ul class="list list-bullet">
+  <li>Why they have initiated a discovery, their vision for the service etc </li>
+  <li>Where this fits into a bigger picture e.g. a programme, a cross-Defra priority. They may want to defer to the Service Designer or Enterprise Architect for some of this wider context</li>
+  </ul>
+
+  <h5 id="toc_31">An intro to the discovery itself</h5>
+
+  <ul class="list list-bullet">
+  <li>What lies ahead, who will be doing what, opportunities to get involved</li>
+  <li>What you expect to produce by the end of the discovery</li>
+  <li>Potentially more detail on how the team will be working e.g. your Trello or Jira board, the time of your standups &amp; how to join it etc </li>
+  </ul>
+
+  <h5 id="toc_32">A “What do we know?” exercise:</h5>
+
+  <ul class="list list-bullet">
+  <li>Put up a sheet or wall for each of the main areas: users &amp; their needs, business drivers &amp; constraints, current internal processes &amp; workflow, existing technology. (If you are looking at an area of need without a current service then the focus will be mainly on who the potential users are, what is known about them, and what the business drivers are). </li>
+  <li>Taking these one at a time, ask the room what’s already known in this area: what are the headlines e.g. user groups, figures, issues, costs, technology used etc? What are the sources of insight (inc what has already been gathered as prep)? Capture the headline info on post-its on the relevant sheet/wall. </li>
+  <li>Are there apparent gaps in what’s known? What are they? Capture them on different coloured sticky notes on the sheet/wall. </li>
+  <li>Take photos of the sheets</li>
+  </ul>
+
+  <h5 id="toc_33">A prioritisation exercise:</h5>
+
+  <ul class="list list-bullet">
+  <li>Take the sticky notes that represent gaps in knowledge. </li>
+  <li>Ask: which of these should be looked into first? Why? By whom? What access or support might they need? </li>
+  <li>Create a prioritised list on the wall. This is your backlog for the sprint ahead. </li>
+  </ul>
+
+  <h4 class="heading-small" id="toc_34">Gathering &amp; mapping insight</h4>
+
+  <p>The team should now be focused on plugging the gaps in knowledge identified in the kick-off workshop. Ideally they will be working from the backlog of tasks, held in Trello, or Jira or a similar tool. </p>
+
+  <p>This work will be happening in parallel with individuals working on their own specialist area(s) of focus but all bringing what they learn back to the team and sharing progress and any blockers at the daily standup. </p>
+
+  <p>The team will be using what they learn to build up a map of the world as it currently is. Ideally this will be on a physical wall next to where they are sitting, but it is also likely to be captured digitally. The service designer is likely to lead or supervise this work, with the rest of the team contributing. (There is an emerging template for this - Polly Jones (EA) is leading on it.)</p>
+
+  <p>It’s likely that only headlines can be mapped on the wall and that there will also be other supporting documentation. </p>
+
+  <p>The activities and outputs are likely to be:</p>
+
+  <h5 id="toc_35">Users &amp; their needs</h5>
+
+  <ul class="list list-bullet">
+  <li>Lead by the user researcher</li>
+  <li>Likely to include both internal and external users, including those likely to need assisted digital support </li>
+  <li>Likely to involve new primary research i.e. contacting users, meeting/interviewing/surveying them to understand more about their needs and their current pain points. This is likely to be the most time consuming work in the learning phase</li>
+  <li>Also likely to involve analysing existing data or insight gathered during the prep phase (e.g. logs from the call centre, existing survey results etc)</li>
+  <li>The business analyst is also likely to be involved with this, particularly the analysis of existing insight, and perhaps supporting primary research with internal users. They might also be looking into other/existing services that meet or partially meet the emerging needs. </li>
+  <li>The designer is also likely to be involved with understanding and mapping the current user experience</li>
+  </ul>
+
+  <h6 id="toc_36">What will be produced?</h6>
+
+  <ul class="list list-bullet">
+  <li>Personas and names for each of the main user groups, probably brought to life with real quotes from the research </li>
+  <li>Overview of “epic” user needs (the high level needs picked up during the research); ideally these will be mapped on the wall</li>
+  <li>Overview of the current user experience, mapped on the wall </li>
+  <li>Overview of pain points, mapped on the wall</li>
+  </ul>
+
+  <h5 id="toc_37">Business drivers &amp; constraints</h5>
+
+  <ul class="list list-bullet">
+  <li>Business drivers &amp; constraints should already be well known from the prep work, business case and kick off workshop. </li>
+  <li>However there may be things to follow up on or dig into (e.g. policy detail, the extent to which some of the obligations are really statutory) </li>
+  <li>You may also need to understand and map the costs associated with running the service (particularly if one of the business drivers is to find savings)</li>
+  <li>This is likely to be lead by the business analyst and involve the product owner</li>
+  </ul>
+
+  <h6 id="toc_38">What will be produced?</h6>
+
+  <ul class="list list-bullet">
+  <li>A set of overall Acceptance Criteria for the service can be a useful way to capture the main drivers &amp; constraints (e.g. whatever we develop it must comply with regulation x, it must maintain £x revenue, it must meet the Service Standard, it must save £x, and so on)</li>
+  <li>Insights about business drivers &amp; constraints are also likely to help explain process &amp; workflow and be mapped as part of that e.g. if there is a statutory obligation to report something then there is likely to be a point in the workflow where this features.</li>
+  </ul>
+
+  <h5 id="toc_39">Current internal processes &amp; workflow</h5>
+
+  <ul class="list list-bullet">
+  <li>The detail of this is likely to come from the user research with internal users</li>
+  <li>However there will also be other sources (e.g. existing process maps)</li>
+  <li>The business analyst is likely to lead on pulling this together and plugging any gaps (including mapping the relative costs)</li>
+  </ul>
+
+  <h6 id="toc_40">What will be produced?</h6>
+
+  <ul class="list list-bullet">
+  <li>This will inform the process/workflow layer of the map</li>
+  <li>This is also likely to feed into the personas, for internal users</li>
+  </ul>
+
+  <h5 id="toc_41">Existing technology</h5>
+
+  <ul class="list list-bullet">
+  <li>The tech lead will be focusing on gathering and understanding any existing technology through existing documentation, interviews, workshops etc</li>
+  <li>This is also likely to feed into the view of the cost of running the existing service</li>
+  <li>This assumes that there is already some technology involved in the service area If there isn’t, then the tech lead might focus on the wider technology context and potential candidate technology</li>
+  </ul>
+
+  <h6 id="toc_42">What will be produced?</h6>
+
+  <ul class="list list-bullet">
+  <li>This will inform the technology layer of the map, showing at headline level what tech is currently involved at each stage of the current service/process</li>
+  <li>There’s also likely to be more detailed background information about how things currently work, known issues, dependencies, contracts etc </li>
+  </ul>
+
+  <p>As the team build up a picture of the current situation on their wall it will become a powerful communication tool - not just for the team themselves but for any interested colleagues too. One of the benefits of working on a wall is that progress is very visible, and people can visit and be walked through what’s emerging. Its also a good idea to take lots of photos of it as it develops, they might come in useful later.</p>
+
+  <p>By the end of this phase the team will have:</p>
+
+  <ul class="list list-bullet">
+  <li>A set of personas for external and internal users</li>
+  <li>A set of high level (epic) user needs for these users </li>
+  <li>A service map of the world as it currently is, showing the current user experience, underlying process/workflow and enabling technology, and flagging any pain points</li>
+  <li>A set of Acceptance Criteria for the service</li>
+  </ul>
+
+  <h4 class="heading-small" id="toc_43">Sharing, validation &amp; prioritisation</h4>
+
+  <p>The Service Owner and subject matter experts will have been involved in much of this work, and should also be able to view progress via wall. In addition, it’s useful to set aside dedicated time to walk through the outputs with them, for comment and validation.</p>
+
+  <p>You may want to hold a session mid-way through to validate your learnings, or you might hold a series of sessions with particular subject matter experts, in which they gather to review the parts of the map they’re most familiar with. </p>
+
+  <p>It’s important to have a session at the end of the learning phase to talk about prioritisation. This will help inform what you focus on during the sketching &amp; testing phase. </p>
+
+  <p>Based on what you have learnt and mapped - are there any emerging priorities? </p>
+
+  <ul class="list list-bullet">
+  <li>Are the needs of certain user groups higher priority than others? Why?</li>
+  <li>Are there particular pain points that need addressing more urgently than others? Why?</li>
+  </ul>
+
+  <h3 class="heading-medium" id="toc_44">The sketching and testing phase</h3>
+
+  <p>This phase is about <strong>identifying and testing opportunities</strong>.  </p>
+
+  <p>It’s called “sketching” because this is about having lots of ideas and sketching them out in enough detail to be able to discuss and test them. It’s a collaborative process. It’s also the most creative part of discovery and can lead to the most transformational thinking. </p>
+
+  <p>How you approach it will depend partly on the scale and complexity of the service you are looking at.  </p>
+
+  <p>Ideally, you’ll be able to look at a whole set of user needs - from trigger to goal. It’s best to start with a blank wall, and sketch out more than one way that the needs could be met. </p>
+
+  <p>It’s worth doing this even if you suspect that you’ll later need to focus in on one of the more limited or feasible options. </p>
+
+  <p>The main questions you will be asking and answering are:</p>
+
+  <ul class="list list-bullet">
+  <li>if these are the needs of our users, how might they be met (better)?</li>
+  <li>what might be a great user experience?</li>
+  <li>what workflow does this imply? </li>
+  <li>what implications might this have for staff/partners?</li>
+  <li>what data/access to data does this imply?</li>
+  <li>what technical capability does this imply?</li>
+  <li>what candidate technology do we know about?</li>
+  <li>what savings might this generate (where relevant)?</li>
+  </ul>
+
+  <h4 class="heading-small" id="toc_45">Technical capability vs candidate technology</h4>
+
+  <p>“Technical capability” means generic things like the ability to take payment, or for a user to log in, or to be able to send in evidence.  </p>
+
+  <p>“Candidate technology” means actual named solutions that could meet these needs e.g. a particular payment system that’s already in use, a cross-government solution like <a href="https://www.gov.uk/government/publications/introducing-govuk-verify/introducing-govuk-verify">GOV.UK Verify</a>, or a document upload solution being developed by another team. This is where the team might need the input of an enterprise architect who is plugged into the wider tech landscape. </p>
+
+  <p>The value in separating these two things in your conversations and on your wall is that it makes you think about the capability first, and then consider a range of ways that could be met. This often helps when you come to build up your roadmap. Your first iteration might use a spreadsheet to store customer information, but a future iteration might use a full CRM solution like Microsoft Dynamics. The need remains, but the way that you meet it can iterate over time. </p>
+
+  <h4 class="heading-small" id="toc_46">Starting with ideals</h4>
+
+  <p>A good way to approach the sketching phase is to start with a blank wall, and map your user needs across the top before moving on down through the different layers (user experience, workflow, tech capability, data, candidate technology etc - using the questions above). You’ll be building up one or more versions of an ideal service map. </p>
+
+  <p>Ideally this will be a new map (or several), separate to the as-is service map that you made during the learning phase. The first map showed the world as it is, the new sketches shows the world as it might be. </p>
+
+  <p>The whole team should be involved with this process. </p>
+
+  <p>Ideally you would have a couple of goes at this, or play around with some variations. If you’re feeling really playful you can ask questions like “How would Apple do this?” or “How would Amazon do this?” Sometimes this can spark interesting new ideas. </p>
+
+  <h4 class="heading-small" id="toc_47">Reality check</h4>
+
+  <p>Once you’ve had a chance to think about a few idealised views of how the needs could be met you can turn back to your “as is” service map, the one you created during the learning phase.</p>
+
+  <p>How can you apply some of your new thinking to this? What opportunities might there be to move closer to the ideal? What steps could be cut? Where might better information help? What might you want to replace or reorganise? What new partnerships could you form? </p>
+
+  <h4 class="heading-small" id="toc_48">Testing</h4>
+
+  <p>Once you’ve sketched out some possibilities, think about how you can quickly test your thinking - with your SMEs, with potential partner teams or organisations, with internal or external users etc. </p>
+
+  <p>At this stage it isn’t about formal user testing, but it is about sense checking your ideas with people outside of the core team. </p>
+
+  <h4 class="heading-small" id="toc_49">Prioritisation</h4>
+
+  <p>Towards the end of the sketching phase you’ll need to prioritise opportunities to take forward into the final refinement and planning phase. If you’re working towards the digital Service Standard, that includes working out what you want to test in your alpha (see below). </p>
+
+  <p>Your service owner should have been closely involved with the sketching and testing, but you may want to organise a specific session to review what’s emerged, and to agree what to take forward.  This could be done via a dedicated show &amp; tell session.</p>
+
+  <p>In some cases, what may have emerged is that your organisation isn’t the best or right one to be delivering a service at all. You might have come up with some alternative approaches that involve partners or the private sector - that’s a valid outcome too.</p>
+
+  <h4 class="heading-small" id="toc_50">Choosing an alpha</h4>
+
+  <p>There are tips on choosing an alpha in the <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works">Service Manual</a>.</p>
+
+  <p>Other things to consider:</p>
+
+  <ul class="list list-bullet">
+  <li>Impact on users: will this make sense as an offer to internal and external users?</li>
+  <li>Scale: how many users will this reach? What potential future costs or savings might it lead to?</li>
+  <li>Opportunities to learn: what would we be able to test? What would we learn that we could build on? (Both for this service, but also for the wider programme)</li>
+  <li>Feasibility: do we have access to the necessary skills and technology to produce a meaningful alpha?</li>
+  <li>Pathway to beta: can we see a potential route from this alpha to a feasible beta and later, a live service?</li>
+  </ul>
+
+  <h3 class="heading-medium" id="toc_51">The refining &amp; planning phase</h3>
+
+  <p>This phase is about <strong>coming up with a realistic plan for getting started</strong>.</p>
+
+  <p>In some cases this might be a plan for developing an alpha, internally. In other cases it might be a plan to procure a solution, or to initiate a new partnership, or simply to make some incremental improvements to a particular process. </p>
+
+  <p>In each of these scenarios you’ll still want to answer these questions:</p>
+
+  <ul class="list list-bullet">
+  <li>What are we proposing?</li>
+  <li>Why?</li>
+  <li>What benefits will this approach deliver?</li>
+  <li>What funding do we need to take this forward?</li>
+  <li>Do we need to make a business case/complete a funding approval for this? </li>
+  <li>What are our dependencies and constraints?</li>
+  <li>Who needs to be involved? </li>
+  </ul>
+
+  <h4 class="heading-small" id="toc_52">Working towards an alpha</h4>
+
+  <p>If the outcome of your discovery is that you are proposing an alpha, then you are likely to need to produce the following, as part of your refinement and planning work:</p>
+
+  <ul class="list list-bullet">
+  <li>A backlog of high level user needs for the service</li>
+  <li>As part of the backlog, a set of user stories the alpha must address</li>
+  <li>A proposal/business case for the alpha work</li>
+  <li>A high level service roadmap </li>
+  </ul>
+
+  <p>You should have initial conversations with <strong><em>Information Assurance</em></strong> about any data you expect to use or gather as part of your alpha.</p>
+
+  <p>According to the <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works#how-you-know-discovery-is-finished">Service Manual</a>, discovery is finished when you know:</p>
+
+  <ul class="list list-bullet">
+  <li>the scope of the service you want to build</li>
+  <li>whether to move into the alpha phase</li>
+  <li>the team of people you need if you do move on to alpha</li>
+  <li>that senior stakeholders want to begin building the service and understand your plans</li>
+  <li>how you’ll measure success and what a successful service would look like</li>
+  <li>any related services that exist to meet the user need and whether they’re run by government or third parties (your service shouldn’t be duplicating another government service and it should only meet needs government is uniquely positioned to deliver)</li>
+  <li>how many of your users need assisted digital support, and what their needs are</li>
+  </ul>
+
+
+  <h2 class="heading-large" id="toc_53">Section 4: further reading</h2>
+
+  <p><a href="http://scottcolfer.com/2016/12/27/discovery.html">Discovery for product managers in government</a>, by Scott Colfer. This is a really good overview by someone who understands Discovery and understands government. </p>
+
+  <p><a href="http://www.myddelton.co.uk/blog/better-discoveries">Better discoveries</a>, by Will Myddelton. Will writes thoughtful and thought-provoking stuff.</p>
+
+  <p><a href="https://productforthepeople.xyz/decoding-discovery-13c5f9bf0a79#.qomg3zryv">Decoding discovery</a>, by Matt Jukes. Matt does a good job of demystifying and simplifying the jargon. </p>
+
+  <p><a href="https://www.thoughtworks.com/insights/blog/discovery-day-one">Discovery from day one</a>, by Dan Mutton.</p>
+
+  <p><a href="https://makeitquotidian.co.uk/2015/06/16/discovering-discovery/">Discovering discovery</a>, by Sarah Prag. “Not enough people actually begin at the beginning.”</p>
+
+  <hr>
+
+  <p>This document was written by Sarah Prag with help from the Enabling Digital Transformation team at Defra. Sarah has now left the organisation, and the new owner of this document is Tracey Green.</p>
+
+  <p>This is version 1 and we are keen to update and iterate this guidance based on your feedback.</p>
+
+  <p>To send feedback, please contact us on Yammer (search for <q>Enabling Digital Transformation</q>).</p>
+
+
+</main>
+
+{% endblock %}
