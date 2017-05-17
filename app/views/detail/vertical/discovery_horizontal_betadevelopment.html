@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra service delivery lifecycle</a></li>
+      <li><a href="/details">Details</a></li>
+      <li><a href="/details#vertical">Vertical interactions</a></li>
+      <li><a href="/details#vertical_discovery">Discovery</a></li>
+      <li>Horizontal services in Beta development</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Horizontal services in Beta development</h1>
+      <p>
+        During Discovery the Service Team will identify the Horizontal Services that they will need to interact
+        with, or this may have already been established prior to Discovery.
+      </p>
+      <p>
+        For any Horizontal Services that are already in Beta, there is the opportunity to gain greater understanding
+        of the applications that they are delivering, which helps in planning Alpha.
+      </p>
+      <p>
+        Equally, there is the opportunity to ensure that their development will meet the needs of the vertical service.
+      </p>
+      <p>
+        Without this interaction, the service will proceed to Alpha with incorrect assumptions and an invalid
+        business case.
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Teams</h2>
+  <p>
+    These are the teams that are involved in this interaction and what they want to achieve.
+  </p>
+
+  <div class="grid-row">
+    <div class="column-half">
+
+      <h3 class="heading-small">Service team</h3>
+      <p>
+        "I want to know which, if any, of my user needs will be met by the horizontal service."
+      </p>
+      <p>
+        "I want to know how I can make use of the horizontal service in my Alpha."
+      </p>
+      <p>
+        "I want to know what applications the horizontal service will deliver."
+      </p>
+      <p>
+        "I want to know what the delivery timescales are for the horizontal service."
+      </p>
+
+    </div>
+    <div class="column-half">
+
+      <h3 class="heading-small">Horizontal service teams</h3>
+      <p>
+        "I want to develop against real user needs."
+      </p>
+      <p>
+        "I want to deliver my Beta."
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Objectives</h2>
+  <p>
+    The objective of this interaction is to ensure that the development of the horizontal service will meet the
+    needs of the vertical service, particularly when it moves into Alpha.
+  </p>
+  <p>
+  </p>
+
+  <h2 class="heading-medium">Activities</h2>
+  <p>
+    The service teams will work together on the following activities.
+  </p>
+
+  <h3 class="heading-small">User needs management</h3>
+  <p>
+    Agreeing the ownership and management of user needs as they are uncovered.
+  </p>
+  <p>
+    The Service Team work with the Horizontal Service teams to agree how to incorporate their needs in the backlog.
+  </p>
+  <p>
+    (We don't currently seem to have a mechanism for doing this.)
+  </p>
+
+  <h2 class="heading-medium">Timing</h2>
+  <p>
+    This interaction should be started as soon as the horizontal services are identified as potentially being
+    related to the service.
+  </p>
+
+</main>
+
+{% endblock %}

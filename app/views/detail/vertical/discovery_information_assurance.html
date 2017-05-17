@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra service delivery lifecycle</a></li>
+      <li><a href="/details">Details</a></li>
+      <li><a href="/details#vertical">Vertical interactions</a></li>
+      <li><a href="/details#vertical_discovery">Discovery</a></li>
+      <li>Information assurance</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Information assurance</h1>
+      <p>
+        Before starting Alpha, the Service Team will need to establish the security characteristics of the
+        information that the service will need to handle.
+      </p>
+      <p>
+        The Information Assurance function are well placed to help the Service Team identify this information.
+        They will be able to help identify the key security needs, in particular any special measures that
+        might need to be taken during Alpha.
+      </p>
+      <p>
+        Without this interaction, the investigation in Alpha could be wasted as it would be based on erroneous
+        assumptions and could even, in the worst cases, create a security incident.
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Teams</h2>
+  <p>
+    These are the teams that are involved in this interaction and what they want to achieve.
+  </p>
+
+  <div class="grid-row">
+    <div class="column-half">
+
+      <h3 class="heading-small">Service team</h3>
+      <p>
+        "I want to understand the security context of the information I will be handling during Alpha."
+      </p>
+
+    </div>
+    <div class="column-half">
+
+      <h3 class="heading-small">Support design team</h3>
+      <p>
+        "I want to understand what the Service Team want to achieve so that I can provide the best advice."
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Objectives</h2>
+  <p>
+    The objective of this interaction is to ensure that the nature of the information under discussion is
+    properly understood and articulated, so that decisions on how to handle it during Alpha can be made.
+  </p>
+  <p>
+  </p>
+
+  <h2 class="heading-medium">Activities</h2>
+  <p>
+    The Service Team and Information Assurance function will work together on the following activities.
+  </p>
+
+  <h3 class="heading-small">Initial information assurance assessment</h3>
+  <p>
+    Understanding the value of the information that the service handles and classifying it accordingly.
+  </p>
+  <p>
+    The Information Assurance function will help the Service Team to ask the right questions during Discovery so as
+    to properly identify the security needs.
+  </p>
+  <p>
+    By classifying the information based on user need, the Information Assurance function can give clear guidance
+    on what controls will be necessary for Alpha.
+  </p>
+
+  <h2 class="heading-medium">Timing</h2>
+  <p>
+    This interaction should be started early in the Discovery phase.
+    This is so that the team have plenty of time to find answers to the questions that will give the
+    security classification.
+  </p>
+  <p>
+    This initial assessment will help to understand the effort required in Alpha, but further assessment will take
+    place during Alpha and Beta to better understand the security needs.
+  </p>
+
+</main>
+
+{% endblock %}
