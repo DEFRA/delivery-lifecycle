@@ -2316,11 +2316,11 @@
 			<g id="shape429-1401">
 				<text x="-19.52" y="3120.69" class="st21">Support Design</text>			</g>
 		</g>
-		<g id="shape472-1403" transform="translate(-2763.17,1221.12) rotate(-90)">
+		<a href="/detail/vertical/betadev_support_design" target="_parent"><g id="shape472-1403" transform="translate(-2763.17,1221.12) rotate(-90)">
 			<title>Balloon vertical.472</title>
 			<desc>How can we build the support capability so that the service w...</desc>
 			<path d="M0 3100.49 L80 3100.49 L80 2947.42 L0 2947.42 L0 3016.87 L-28.35 3066.47 L0 3031.04 L0 3100.49 Z" class="st22"></path>
-			<text x="2965.25" y="-65.2" transform="rotate(90)" class="st23">How can we build  the <tspan x="2957.58" dy="1.2em" class="st24">support capability so that </tspan><tspan x="2976.6" dy="1.2em" class="st24">the service will be </tspan><tspan x="2954.57" dy="1.2em" class="st24">appropriately supported in </tspan><tspan x="2958.24" dy="1.2em" class="st24">Private and Public Beta</tspan>?</text>		</g>
+			<text x="2965.25" y="-65.2" transform="rotate(90)" class="st23">How can we build  the <tspan x="2957.58" dy="1.2em" class="st24">support capability so that </tspan><tspan x="2976.6" dy="1.2em" class="st24">the service will be </tspan><tspan x="2954.57" dy="1.2em" class="st24">appropriately supported in </tspan><tspan x="2958.24" dy="1.2em" class="st24">Private and Public Beta</tspan>?</text>		</g></a>
 		<g id="shape473-1410" transform="translate(497.514,-1629.92)">
 			<title>Sheet.473</title>
 			<desc>Horizontal Service Team(s)</desc>
@@ -3805,11 +3805,11 @@
 			<g id="shape748-2480">
 				<text x="3" y="3120.69" class="st21">Operation<tspan x="11" dy="1.2em" class="st24">Support</tspan></text>			</g>
 		</g>
-		<g id="shape791-2483" transform="translate(-1901.43,1229.62) rotate(-90)">
+		<a href="/detail/vertical/betadev_operation_support" target="_parent"><g id="shape791-2483" transform="translate(-1901.43,1229.62) rotate(-90)">
 			<title>Balloon vertical.792</title>
 			<desc>How can we build and operate the service so that we can have ...</desc>
 			<path d="M0 3100.49 L80 3100.49 L80 2984.27 L0 2984.27 L0 3035.29 L-28.35 3084.9 L0 3049.46 L0 3100.49 Z" class="st22"></path>
-			<text x="2995.35" y="-65.2" transform="rotate(90)" class="st23">How can we build <tspan x="3000.34" dy="1.2em" class="st24">and operate the </tspan><tspan x="2994.36" dy="1.2em" class="st24">service so that we </tspan><tspan x="3001.68" dy="1.2em" class="st24">can have a fast </tspan><tspan x="3001.68" dy="1.2em" class="st24">feedback loop</tspan>?</text>		</g>
+			<text x="2995.35" y="-65.2" transform="rotate(90)" class="st23">How can we build <tspan x="3000.34" dy="1.2em" class="st24">and operate the </tspan><tspan x="2994.36" dy="1.2em" class="st24">service so that we </tspan><tspan x="3001.68" dy="1.2em" class="st24">can have a fast </tspan><tspan x="3001.68" dy="1.2em" class="st24">feedback loop</tspan>?</text>		</g></a>
 		<g id="group792-2490" transform="translate(1190.55,-1658.27)">
 			<title>Management.793</title>
 			<desc>Operations Management</desc>
@@ -4010,11 +4010,11 @@
 			<g id="shape792-2626">
 				<text x="-1.5" y="3120.69" class="st21">Operations<tspan x="-10.01" dy="1.2em" class="st24">Management</tspan></text>			</g>
 		</g>
-		<g id="shape835-2629" transform="translate(-1909.94,1413.87) rotate(-90)">
+		<a href="/detail/vertical/betadev_operation_management" target="_parent"><g id="shape835-2629" transform="translate(-1909.94,1413.87) rotate(-90)">
 			<title>Balloon vertical.835</title>
 			<desc>How can we best make use of existing services so that we can ...</desc>
 			<path d="M0 3100.49 L80 3100.49 L80 2987.1 L0 2987.1 L0 3036.71 L-28.35 3086.32 L0 3050.88 L0 3100.49 Z" class="st22"></path>
-			<text x="2998.11" y="-65.2" transform="rotate(90)" class="st23">How can we best <tspan x="3011.11" dy="1.2em" class="st24">make use of </tspan><tspan x="2991.77" dy="1.2em" class="st24">existing services so </tspan><tspan x="2993.43" dy="1.2em" class="st24">that we can have a </tspan><tspan x="2991.76" dy="1.2em" class="st24">fast feedback loop</tspan>?</text>		</g>
+			<text x="2998.11" y="-65.2" transform="rotate(90)" class="st23">How can we best <tspan x="3011.11" dy="1.2em" class="st24">make use of </tspan><tspan x="2991.77" dy="1.2em" class="st24">existing services so </tspan><tspan x="2993.43" dy="1.2em" class="st24">that we can have a </tspan><tspan x="2991.76" dy="1.2em" class="st24">fast feedback loop</tspan>?</text>		</g></a>
 		<g id="shape836-2636" transform="translate(-2240.21,1383.7) rotate(-90)">
 			<title>Balloon vertical.837</title>
 			<desc>How can we participate in the Public Beta so that we can get ...</desc>
