@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra service delivery lifecycle</a></li>
+      <li><a href="/details">Details</a></li>
+      <li><a href="/details#vertical">Vertical interactions</a></li>
+      <li><a href="/details#vertical_betadev">Beta</a></li>
+      <li>Support design</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Beta support design</h1>
+      <p>
+        During Beta the Service Team will iteratively build the applications that form their service.
+        The Support Design team will work with the Service Team to build the corresponding support capability.
+      </p>
+      <p>
+        There will be separate designs for Private and Public Beta and an assessment of support readiness for
+        Private Beta.
+      </p>
+      <p>
+        Without this interaction, the Service Team will be unable to proceed with a Private or Public Beta.
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Teams</h2>
+  <p>
+    These are the teams that are involved in this interaction and what they want to achieve.
+  </p>
+
+  <div class="grid-row">
+    <div class="column-half">
+
+      <h3 class="heading-small">Service team</h3>
+      <p>
+        "I want my service to be supported in Private and Public Beta."
+      </p>
+      <p>
+        "I want to iterate my build."
+      </p>
+
+    </div>
+    <div class="column-half">
+
+      <h3 class="heading-small">Support design team</h3>
+      <p>
+        "I want to ensure that the service is supportable."
+      </p>
+      <p>
+        "I want to ensure that the service will be supported in Private Beta."
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Objectives</h2>
+  <p>
+    The objective of this interaction is to ensure that the service can proceed to Private Beta.
+  </p>
+  <p>
+  </p>
+
+  <h2 class="heading-medium">Activities</h2>
+  <p>
+    The service team and support design function will work together on the following activities.
+  </p>
+
+  <h3 class="heading-small">Workflow definition</h3>
+  <p>
+    Defining the support workflow for incident handling during Private Beta.
+  </p>
+
+  <h3 class="heading-small">Operating level agreement</h3>
+  <p>
+    Defining the support levels to be provided during Private Beta.
+  </p>
+
+  <h3 class="heading-small">Continuous change</h3>
+  <p>
+    Preparing the operational environment for continuous change.
+  </p>
+
+  <h3 class="heading-small">Operational readiness review</h3>
+  <p>
+    Checking that the operational environment is ready for Private Beta.
+  </p>
+
+  <h2 class="heading-medium">Timing</h2>
+  <p>
+    This interaction should be started once the Service Team have begun development.
+    This is so that the team have been able to explore how their service might work well enough to be able to
+    understand what some of the support needs will be.
+  </p>
+
+</main>
+
+{% endblock %}

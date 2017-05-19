@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra service delivery lifecycle</a></li>
+      <li><a href="/details">Details</a></li>
+      <li><a href="/details#vertical">Vertical interactions</a></li>
+      <li><a href="/details#vertical_alpha">Alpha</a></li>
+      <li>Horizontal services in public Beta or Live</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Horizontal services in public Beta or Live</h1>
+      <p>
+        During Alpha the Service Team will want to understand and assess the Horizontal Services that they may need
+        to interact with.
+      </p>
+      <p>
+        For any Horizontal Services that are already in public Beta or Live, the service team need to make use of
+        the common services to demonstrate to their users.
+      </p>
+      <p>
+        Without this interaction, the service will proceed to Beta with incorrect assumptions and an invalid
+        business case.
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Teams</h2>
+  <p>
+    These are the teams that are involved in this interaction and what they want to achieve.
+  </p>
+
+  <div class="grid-row">
+    <div class="column-half">
+
+      <h3 class="heading-small">Service team</h3>
+      <p>
+        "I want to know that the horizontal service will work for my Beta."
+      </p>
+
+    </div>
+    <div class="column-half">
+
+      <h3 class="heading-small">Horizontal service teams</h3>
+      <p>
+        "I want to maintain service levels for my users."
+      </p>
+      <p>
+        "I want to plan to support the service team in their Beta."
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Objectives</h2>
+  <p>
+    The objective of this interaction is to evaluate whether the horizontal service will work for the users.
+  </p>
+  <p>
+    It also ensures that the horizontal service will be ready for the vertical service when it moves into Beta.
+  </p>
+
+  <h2 class="heading-medium">Activities</h2>
+  <p>
+    The service teams will work together on the following activities.
+  </p>
+
+  <h3 class="heading-small">Demonstrators</h3>
+  <p>
+    Creating demonstrators for user feedback.
+  </p>
+  <p>
+    The Service Team engage the Horizontal Service team through a service request to deliver demonstration
+    environments and configuration capability.
+  </p>
+  <p>
+    (We don't currently seem to have a mechanism for doing this.)
+  </p>
+
+  <h2 class="heading-medium">Timing</h2>
+  <p>
+    This interaction should be started once the Service Team are ready to begin producing prototypes and demonstrators.
+  </p>
+
+</main>
+
+{% endblock %}

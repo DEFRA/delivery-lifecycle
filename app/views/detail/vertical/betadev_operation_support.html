@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra service delivery lifecycle</a></li>
+      <li><a href="/details">Details</a></li>
+      <li><a href="/details#vertical">Vertical interactions</a></li>
+      <li><a href="/details#vertical_betadev">Beta</a></li>
+      <li>Operation support</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Beta operation support</h1>
+      <p>
+        During Beta the Service Team will iteratively build the applications that form their service.
+      </p>
+      <p>
+        The Operation Support function will provide the necessary platforms, configuration and monitoring capabilities
+        to support development.
+      </p>
+      <p>
+        They will also supply dedicated environments for Private and Public Beta.
+      </p>
+      <p>
+        Without this interaction, the Service Team will be unable to develop their Beta.
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Teams</h2>
+  <p>
+    These are the teams that are involved in this interaction and what they want to achieve.
+  </p>
+
+  <div class="grid-row">
+    <div class="column-half">
+
+      <h3 class="heading-small">Service team</h3>
+      <p>
+        "I want to perform continuous integration and test, deploying to a representative platform to get
+        regular feedback."
+      </p>
+
+    </div>
+    <div class="column-half">
+
+      <h3 class="heading-small">Operation support team</h3>
+      <p>
+        "I want to apply appropriate monitoring and controls."
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Objectives</h2>
+  <p>
+    The objective of this interaction is to ensure that the service team are able to perform their Beta development.
+  </p>
+  <p>
+    The Operation support team gain an understanding of the operating characteristics of the applications.
+  </p>
+
+  <h2 class="heading-medium">Activities</h2>
+  <p>
+    The service team and operation support function will work together on the following activities.
+  </p>
+
+  <h3 class="heading-small">Provision environments</h3>
+  <p>
+    Stand up environments that are required by the service team through scripted provisioning.
+  </p>
+
+  <h3 class="heading-small">Continuous deployment</h3>
+  <p>
+    Implementing continuous deployment facilities, including promotion from development to production environments.
+  </p>
+
+  <h3 class="heading-small">Manage environments</h3>
+  <p>
+    Monitoring and controlling the environments.
+  </p>
+
+  <h2 class="heading-medium">Timing</h2>
+  <p>
+    This interaction should be started at the beginning of Beta.
+    This is to allow the development to occur.
+  </p>
+
+</main>
+
+{% endblock %}
