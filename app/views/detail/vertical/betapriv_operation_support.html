@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Defra Delivery Lifecycle Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This guide is currently just a prototype to be used to get feedback.</span>
+    </p>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/">Defra service delivery lifecycle</a></li>
+      <li><a href="/details">Details</a></li>
+      <li><a href="/details#vertical">Vertical interactions</a></li>
+      <li><a href="/details#vertical_betapriv">Private beta</a></li>
+      <li>Operation support</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Private beta operation support</h1>
+      <p>
+        During the Beta phase the Service Team will open up their service to a limited number of users for a
+        Private Beta, to see how well their service works in practice.
+      </p>
+      <p>
+        The Operation Support function will work with the Service Team to assess the performance of the
+        operating environments during the Private Beta.
+      </p>
+      <p>
+        Without this interaction, the Service Team will be unable to ready their operating environments for Public Beta.
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Teams</h2>
+  <p>
+    These are the teams that are involved in this interaction and what they want to achieve.
+  </p>
+
+  <div class="grid-row">
+    <div class="column-half">
+
+      <h3 class="heading-small">Service team</h3>
+      <p>
+        "I want to get real world feedback on my service."
+      </p>
+      <p>
+        "I want my service to be supported in Private Beta."
+      </p>
+      <p>
+        "I want to be able to make quick changes to my service in response to user feedback."
+      </p>
+
+    </div>
+    <div class="column-half">
+
+      <h3 class="heading-small">Operation support team</h3>
+      <p>
+        "I want to get real world monitoring information on the service."
+      </p>
+      <p>
+        "I want to apply appropriate monitoring and controls."
+      </p>
+
+    </div>
+  </div>
+
+  <h2 class="heading-medium">Objectives</h2>
+  <p>
+    The objective of this interaction is to ensure that the service team are able to run a Private Beta.
+  </p>
+  <p>
+    The Operation support team gain an understanding of the real world use of the applications.
+  </p>
+
+  <h2 class="heading-medium">Activities</h2>
+  <p>
+    The service team and operation support function will work together on the following activities.
+  </p>
+
+  <h3 class="heading-small">Provision environments</h3>
+  <p>
+    Stand up environments that are required by the service team through scripted provisioning.
+  </p>
+
+  <h3 class="heading-small">Continuous deployment</h3>
+  <p>
+    Continuous deployment including promotion from development to production environments.
+  </p>
+  <p>
+    The teams should be deploying changes to the service during the Private Beta.
+  </p>
+
+  <h3 class="heading-small">Manage environments</h3>
+  <p>
+    Monitoring and controlling the environments.
+  </p>
+
+  <h2 class="heading-medium">Timing</h2>
+  <p>
+    This interaction should carry over from development and so will have already started at the beginning of the
+    Private Beta.
+  </p>
+
+</main>
+
+{% endblock %}

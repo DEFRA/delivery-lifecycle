@@ -2545,7 +2545,7 @@
 			<g id="shape478-1573">
 				<text x="-6.51" y="3120.69" class="st21">Governance</text>			</g>
 		</g>
-		<g id="shape521-1575" transform="translate(-2530.72,1216.87) rotate(-90)">
+		<g id="shape521-1575" transform="translate(-2530.72,1223.95) rotate(-90)">
 			<title>Balloon vertical.522</title>
 			<desc>How can we use common services so that we are aligned with st...</desc>
 			<path d="M0 3100.49 L94.4 3100.49 L94.4 2964.43 L0 2964.43 L0 3025.37 L-28.35 3074.98 L0 3039.54 L0 3100.49 Z" class="st22"></path>
@@ -4371,11 +4371,11 @@
 			<g id="shape875-2855">
 				<text x="-19.52" y="3120.69" class="st21">Support Design</text>			</g>
 		</g>
-		<g id="shape918-2857" transform="translate(-2788.68,1700.17) rotate(-90)">
+		<a href="/detail/vertical/betapriv_support_design" target="_parent"><g id="shape918-2857" transform="translate(-2788.68,1700.17) rotate(-90)">
 			<title>Balloon vertical.918</title>
 			<desc>How can we evaluate the support capability so that we get fee...</desc>
 			<path d="M0 3100.49 L80 3100.49 L80 2978.97 L0 2978.97 L0 3032.64 L-28.35 3082.25 L0 3046.82 L0 3100.49 Z" class="st22"></path>
-			<text x="3007.05" y="-65.2" transform="rotate(90)" class="st23">How can we <tspan x="2983.69" dy="1.2em" class="st24">evaluate  the support </tspan><tspan x="2985.7" dy="1.2em" class="st24">capability so that we </tspan><tspan x="2986.69" dy="1.2em" class="st24">get feedback for the </tspan><tspan x="3006.04" dy="1.2em" class="st24">Public Beta</tspan>?</text>		</g>
+			<text x="3007.05" y="-65.2" transform="rotate(90)" class="st23">How can we <tspan x="2983.69" dy="1.2em" class="st24">evaluate  the support </tspan><tspan x="2985.7" dy="1.2em" class="st24">capability so that we </tspan><tspan x="2986.69" dy="1.2em" class="st24">get feedback for the </tspan><tspan x="3006.04" dy="1.2em" class="st24">Public Beta</tspan>?</text>		</g></a>
 		<g id="shape919-2864" transform="translate(-2646.95,1853.24) rotate(-90)">
 			<title>Balloon vertical.920</title>
 			<desc>How can we incorporate our user feedback so that we can use i...</desc>
@@ -4810,11 +4810,11 @@
 			<g id="shape969-3177">
 				<text x="3" y="3120.69" class="st21">Operation<tspan x="11" dy="1.2em" class="st24">Support</tspan></text>			</g>
 		</g>
-		<g id="shape1012-3180" transform="translate(-1924.11,1701.59) rotate(-90)">
+		<a href="/detail/vertical/betapriv_operation_support" target="_parent"><g id="shape1012-3180" transform="translate(-1924.11,1701.59) rotate(-90)">
 			<title>Balloon vertical.1057</title>
 			<desc>How can we evaluate the operation of the service so that we c...</desc>
 			<path d="M0 3100.49 L80 3100.49 L80 2958.76 L0 2958.76 L0 3022.54 L-28.35 3072.14 L0 3036.71 L0 3100.49 Z" class="st22"></path>
-			<text x="2972.59" y="-65.2" transform="rotate(90)" class="st23">How can we evaluate <tspan x="2977.92" dy="1.2em" class="st24">the operation of the </tspan><tspan x="2970.26" dy="1.2em" class="st24">service so that we can </tspan><tspan x="2975.25" dy="1.2em" class="st24">use the feedback for </tspan><tspan x="2995.93" dy="1.2em" class="st24">Public Beta</tspan>?</text>		</g>
+			<text x="2972.59" y="-65.2" transform="rotate(90)" class="st23">How can we evaluate <tspan x="2977.92" dy="1.2em" class="st24">the operation of the </tspan><tspan x="2970.26" dy="1.2em" class="st24">service so that we can </tspan><tspan x="2975.25" dy="1.2em" class="st24">use the feedback for </tspan><tspan x="2995.93" dy="1.2em" class="st24">Public Beta</tspan>?</text>		</g></a>
 		<g id="shape1013-3187" transform="translate(-2258.6,1851.42) rotate(-90)">
 			<title>Balloon vertical.1102</title>
 			<desc>How can we use the Public Beta so that we have a functioning ...</desc>
